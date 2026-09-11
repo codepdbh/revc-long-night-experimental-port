@@ -1,3 +1,33 @@
+# 🧟 reVC: Long Night — Experimental Port
+
+**Build no oficial y experimental** del port Android de reVC ([codepdbh/revc-android-port-evolved](https://github.com/codepdbh/revc-android-port-evolved))
+adaptado para correr los datos del mod de conversión total **[GTA Long Night](https://www.gtagarage.com/mods/show.php?id=32390)**
+(apocalipsis zombie sobre el mapa de Vice City) en Android.
+
+- **App independiente**: se instala aparte (`com.revc.game.longnight`), en su propia carpeta
+  (`Almacenamiento interno/reVC-LongNight`) — nunca toca ni reemplaza una instalación normal de reVC.
+- **Es un fork del fork**: comparte todo el trabajo de compatibilidad Android de
+  [revc-android-port-evolved](https://github.com/codepdbh/revc-android-port-evolved) (ver ese repo para el
+  detalle completo de arreglos del port); acá solo se agrega lo específico de correr Long Night arriba.
+- **Estado**: jugable de punta a punta (menú, partida nueva, mundo, misiones). Queda un bug conocido y sin
+  resolver: un desync del script en la muerte/reaparición del jugador (ver [Modding](#modding) más abajo).
+
+**Descargas:** APK compilado en [Releases](https://github.com/codepdbh/revc-long-night-experimental-port/releases).
+Necesitás los archivos del mod GTA Long Night por tu cuenta (no se distribuyen acá) — copialos a
+`Almacenamiento interno/reVC-LongNight` en tu celular.
+
+### 📸 Screenshots
+
+<p>
+  <img src="screenshots/menu.png" alt="Menú principal de Long Night" width="49%">
+  <img src="screenshots/nueva-partida.png" alt="Submenú de nueva partida" width="49%">
+</p>
+<p>
+  <img src="screenshots/gameplay-tanque.png" alt="Gameplay: tanque en una base militar bajo lluvia" width="98%">
+</p>
+
+---
+
 <img src="https://github.com/mrxenginner/reVC/blob/miami/res/images/logo_1024.png?raw=true" alt="reVC logo" width="200">
 
 ## Intro
