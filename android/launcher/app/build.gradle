@@ -11,8 +11,8 @@ android {
         applicationId "com.revc.game"
         minSdk 24
         targetSdk 35
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
 
         ndkVersion '27.2.12479018'
 
@@ -84,10 +84,6 @@ android {
     packagingOptions {
         jniLibs.excludes += ['META-INF/*']
         resources.excludes += ['META-INF/*']
-        // jniDebuggable alone still lets AGP strip DWARF line info on some
-        // versions -- force-keep full debug symbols so addr2line can resolve
-        // exact source lines from a device tombstone, not just function names.
-        jniLibs.keepDebugSymbols += ['**/*.so']
     }
 
     compileOptions {
