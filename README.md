@@ -11,6 +11,10 @@ adaptado para correr los datos del mod de conversión total **[GTA Long Night](h
   detalle completo de arreglos del port); acá solo se agrega lo específico de correr Long Night arriba.
 - **Estado**: jugable de punta a punta (menú, partida nueva, mundo, misiones). Queda un bug conocido y sin
   resolver: un desync del script en la muerte/reaparición del jugador (ver [Modding](#modding) más abajo).
+- **Diálogos de sí/no**: los diálogos propios de Long Night (por ejemplo, hablando con el personaje del SWAT)
+  usan una tecla de teclado (A/D) que la build de PS2 detecta automáticamente como D-Pad Izquierda/Derecha —
+  izquierda = sí, derecha = no. Se agregaron como flechas ← → a los costados del botón de agacharse (no texto,
+  para que se entienda sin importar el idioma).
 
 **Descargas:** APK compilado en [Releases](https://github.com/codepdbh/revc-long-night-experimental-port/releases).
 Necesitás los archivos del mod GTA Long Night por tu cuenta (no se distribuyen acá) — copialos a
@@ -24,6 +28,9 @@ Necesitás los archivos del mod GTA Long Night por tu cuenta (no se distribuyen 
 </p>
 <p>
   <img src="screenshots/gameplay-tanque.png" alt="Gameplay: tanque en una base militar bajo lluvia" width="98%">
+</p>
+<p>
+  <img src="screenshots/controles-flechas.png" alt="Botones de flechas izquierda/derecha para diálogos de sí/no" width="98%">
 </p>
 
 ---
