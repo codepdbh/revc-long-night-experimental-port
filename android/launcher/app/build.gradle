@@ -11,8 +11,8 @@ android {
         applicationId "com.revc.game"
         minSdk 24
         targetSdk 35
-        versionCode 5
-        versionName "1.0.4"
+        versionCode 6
+        versionName "1.0.5"
 
         ndkVersion '27.2.12479018'
 
@@ -25,6 +25,11 @@ android {
         // Name of the game-files folder under internal storage (Environment.
         // getExternalStorageDirectory()), read by GameActivity.GAME_FOLDER_NAME.
         buildConfigField "String", "GAME_FOLDER_NAME", "\"reVC\""
+
+        // Long Night's own NPC dialogue prompts (e.g. talking to the SWAT
+        // character) read D-Pad Left/Right for yes/no -- not a vanilla VC
+        // mechanic, so the "SÍ"/"NO" touch buttons only make sense there.
+        buildConfigField "boolean", "IS_LONG_NIGHT_EDITION", "false"
     }
 
     // Separate mod "editions": each one is its own installable app (own
@@ -43,6 +48,7 @@ android {
             applicationIdSuffix ".longnight"
             versionNameSuffix "-longnight"
             buildConfigField "String", "GAME_FOLDER_NAME", "\"reVC-LongNight\""
+            buildConfigField "boolean", "IS_LONG_NIGHT_EDITION", "true"
         }
     }
 
